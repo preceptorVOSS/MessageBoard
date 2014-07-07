@@ -1,0 +1,35 @@
+body {
+    background-color: #C6E2FF;
+}
+
+table {
+    border: 2px solid blue;
+    margin: auto;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titles {
+    text-align: center;
+}
+
+tr {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td {
+    padding: 15px;
+    border: 2px solid black;
+}
+
+span {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="dialect">
+        org.hibernate.dialect.MySQLDialect
+    </property>
+    <property name="connection.url">
+        jdbc:mysql://localhost:3306/message_board
+    </property>
+    <property name="connection.driver_class">
+        com.mysql.jdbc.Driver
+    </property>
+    <property name="connection.username">
+        root
+    </property>
+    <property name="connection.password">
+        br00talpatt1z
+    </property>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+    <mapping resource="com/example/messageboard/Topic.hbm.xml"/>
+    <mapping resource="com/example/messageboard/Message.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
